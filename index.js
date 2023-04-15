@@ -15,7 +15,7 @@ mongoose.connect(process.env.MongoDb || 'mongodb+srv://davron:j24xt200@cluster0.
     .then(() => {
         console.log('success');
     }).catch(err => {
-        console.log(err);
+        console.log("errorni ushlab oldimmmm"+err);
     })
 
 const bookSchema = new mongoose.Schema({
