@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect(process.env.MongoDb,
+mongoose.connect(process.env.MongoDb || 'mongodb+srv://davron:j24xt200@cluster0.xx23vi9.mongodb.net/test',
     { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('success');
